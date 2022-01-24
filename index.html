@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Books</title>    
+<script src="script.js">
+
+
+</script>
+</head>
+<body>
+<div class="headerNav">
+    <div class="logo">books.</div>
+    <div class="menu">
+        <button id="addBook" class="addBook">Add Book</button>
+    </div>
+</div>
+
+
+    <div id="bookGrid" class="bookGrid">
+        <div id='bookCard' class="bookCard">
+            <h3 id='bookTitle'>Book 1</h3>
+            <p id="bookAuthor">By Brandon Wirth</p>
+            <p id="bookPages">265 pages</p>
+            <p id="bookRead">Nah, didn't read</p>
+        </div>
+        <!-- <div class="bookCard">
+            <h3>Book 1</h3>
+            <p>By Brandon Wirth</p>
+            <p>265 pages</p>
+            <p>Nah, didn't read</p>
+        </div>
+        <div class="bookCard">
+            <h3>Book 1</h3>
+            <p>By Brandon Wirth</p>
+            <p>265 pages</p>
+            <p>Nah, didn't read</p>
+        </div> -->
+    </div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close"> &times; </span>
+        <div class="formCont">
+            <h3>Add Book</h3>
+            <p class="modalField">Title:</p>
+            <input id="inTitle" type="text">
+            <p class="modalField">Author:</p>
+            <input id="inAuthor" type="text">
+            <p class="modalField">Page Count:</p>
+            <input id="inPageCount" type="text">
+            <p class="modalField" >Read?</p>
+            <label class="switch">
+                <input id="inRead" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <button>Add</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
